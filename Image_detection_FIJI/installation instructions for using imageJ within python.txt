@@ -1,0 +1,44 @@
+*********************** installation of the imageJ embedding within python *******************************
+
+**Install anaconda. 
+
+There are two methods to do the job: 
+1> Using conda forge:
+On anaconda prompt, use the conda forge operation. This prevents the version mismatch problems during updates. 
+
+2> Using pip:
+This is a harder method of installation. I personally go with pip is I want to always keep the subsidiaries
+attached to the main package and use the wheel.
+
+
+You need to install java SDK and MVN (they are kept in a single folder).
+I installed JRE 8u321 and MVN 3.8.5 and it works perfectly for me.
+You need to copy the "mvn" and the "java" folder in the local C:\ drive  
+
+For java:
+Run the executable for java as it is. 
+Add system variable JAVA_HOME
+and its path as >> C:\Program Files\Java\jre1.8.0_321
+
+For mvn: 
+add system varaible MAVEN_HOME
+and its path >> C:\mvn\apache-maven-3.8.5
+with the "path" system variable, add >> C:\mvn\apache-maven-3.8.5\bin
+
+Check where bin is (for mvn) and jre1.8.0_321 is (for java) is you use a different installation route
+
+Then, >> pip install pyimagej 
+in the anaconda prompt
+
+restart the jupyter notebook or  (spyder or pycharm) to run the stuff. 
+
+I am yet to test it on pycharm 
+A detailed installation manual for the installation of both the techniques can be found here.
+this is general and is more detailed.  
+>> https://github.com/imagej/pyimagej/blob/master/doc/Install.md
+
+After the installation of mvn and java in your P.C., Edit the following environment variables
+
+Add this in path >> C:\mvn\apache-maven-3.8.5\bin 
+Add this in system variable >> JAVA_HOME: C:\Program Files\Java\jre1.8.0_321
+Add this in system variable MAVEN_HOME: C:\mvn\apache-maven-3.8.5
