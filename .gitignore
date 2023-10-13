@@ -1,0 +1,3 @@
+# ignore the ipynb check points 
+
+**/*.ipynb_checkpoints/
