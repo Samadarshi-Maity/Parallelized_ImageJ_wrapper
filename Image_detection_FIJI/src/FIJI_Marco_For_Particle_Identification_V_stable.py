@@ -12,9 +12,6 @@
 #3. You can edit the macro to obtain your desired series of processing steps within this function.
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# ~~~~~~~~~~~ Developed by @ Samadarshi 25.juli.2022. ~~~~~~~~~~~~~~~~~~
-#1. Chenge the echo technnique from manual to tqdm 
-
 def process_NF_particles(path, frame_start, frame_finish, mem_alloc):
     
     '''
@@ -22,6 +19,9 @@ def process_NF_particles(path, frame_start, frame_finish, mem_alloc):
     path: the folder which contains the set of images
     frame_start:  the ID of the starting frame (name the frames in 6 digit IDs)
     frame_finish: the ID of the ending frame 
+
+    Returns: 
+    Z: the contatenated dataframe for tasked images for this worker
     '''
     
     # import everthing for each process independantly
