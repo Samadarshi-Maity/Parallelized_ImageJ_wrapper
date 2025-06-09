@@ -54,11 +54,6 @@ def process_NF_particles(path, frame_start, frame_finish, mem_alloc):
     run("Invert");
     // Enhance the contrast of the image
     run("Enhance Contrast", "saturated=0.35");
-    run("Enhance Contrast", "saturated=0.35");
-    run("Enhance Contrast", "saturated=0.35");
-    run("Enhance Contrast", "saturated=0.35");
-    run("Enhance Contrast", "saturated=0.35");
-    run("Enhance Contrast", "saturated=0.35");
     // ~~~~~~~~~Apply the gaussian blur: low pass filter: sigma set at 2~~~~~~~~~~~ 
     run("Gaussian Blur...", "sigma=2");
     // find the peaks after applying the filter 
